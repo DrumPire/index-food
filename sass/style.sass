@@ -165,6 +165,7 @@ body
 .card-text-light
   color: #fff
 .card
+  flex: 50%
   position: relative
   border-radius: 20px
   overflow: hidden
@@ -172,7 +173,6 @@ body
   max-width: 570px
   min-height: 380px
   display: flex
-  flex-grow: 1
   flex-direction: column
   justify-content: space-between
   &-title 
@@ -209,6 +209,8 @@ body
     height: 100%
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
     z-index: -1
+.primary-card
+  margin-right: 40px
 .sweet-basket
   background-image: url('../img/food-one.png')
   background-repeat: no-repeat
@@ -378,16 +380,53 @@ body
     margin-right: 40px
   .tabs-content
       flex-wrap: wrap
-  .tabs-card
       flex: 50%
-      max-width: calc( 50% - 30px )
+  .tabs-card
+      max-width: calc( 100% - 30px )
+      margin-bottom: 30px
   .card-wrapp
     flex-wrap: wrap
-    flex: 50%
+  .advantage-card
+    max-width: calc( 50% - 30px )
+    margin-bottom: 30px
 @media (max-width: 992px)
   .container
     max-width: 760px
   .slide
     padding: 60px
-  .tabs-card
+  .delivery-card
     width: calc( 50% - 30px )
+  .tabs-card
+    width: calc( 100% - 30px )
+  .footer-logo
+    margin-right: 30px
+@media (max-width: 768px)
+  .container
+    max-width: 560px
+  .header
+    flex-wrap: wrap
+  .search-form
+    order: 5
+    margin: 15px 0
+  .promo
+    flex-wrap: wrap
+  .primary-card
+    margin-right: 1px
+    margin-bottom: 30px
+  .footer-link
+    margin-right: 0
+@media (max-width: 576px)
+  .container
+    max-width: 90%
+  .tabs-content
+    flex: 100%
+    max-width: 100%
+  .advantage-card
+    max-width: 100%
+  .delivery-card
+    width: 100%
+  .button
+    padding: 12px 25px
+  .slider-buttons
+    right: 20px
+    bottom: 20px
